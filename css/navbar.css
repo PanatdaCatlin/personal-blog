@@ -1,0 +1,19 @@
+.navbar {
+  grid-area: nav;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100px;
+}
+/* .main-nav {
+  display: block;
+} */
+.left-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 400px;
+}

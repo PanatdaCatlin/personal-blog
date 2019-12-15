@@ -1,0 +1,49 @@
+/* Mobile first  */
+.container {
+  grid-template-areas:
+    "nav"
+    "us"
+    "main"
+    "ft";
+  grid-template-rows: 106px 1fr 2fr 1fr;
+}
+.user-info {
+  grid-area: us;
+}
+
+/* Temporarily see all boxes models*/
+/* * {
+    border: 1px solid red !important;
+  } */
+
+/* if screen is wide enough */
+@media (min-width: 600px) and (max-width: 1100px) {
+  .container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-rows: 111px 825px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main us us us"
+      "ft ft ft ft ft ft ft ft";
+    border: 5px solid black;
+  }
+}
+@media (min-width: 1101px) {
+  .container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-rows: 111px 825px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main us us us"
+      "ft ft ft ft ft ft ft ft";
+    border: 5px solid black;
+  }
+}
