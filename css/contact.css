@@ -2,27 +2,29 @@
 .container {
   /* initially each element has it's own row for small screens */
   grid-template-areas:
-    "nav"
+    "nav-left"
+    "nav-links"
+    "nav-right"
     "main"
     "ft";
-  grid-template-rows: 106px 2fr 1fr;
+  grid-template-rows: 106px 25px 50px 2fr 1fr;
 }
 /* Temporarily see all boxes models*/
 /* * {
     border: 1px solid red !important;
   } */
 /* Medium Screens*/
-@media (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: 660px) and (max-width: 1100px) {
   .container {
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav"
+      "nav-left nav-left nav-links nav-links nav-links nav-links nav-right nav-right"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
     border: 10px solid black;
   }
@@ -31,14 +33,14 @@
 @media (min-width: 1101px) {
   .container {
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav"
+      "nav-left nav-left nav-links nav-links nav-links nav-links nav-right nav-right"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid steelblue;
   }
