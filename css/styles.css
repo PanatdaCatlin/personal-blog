@@ -1,16 +1,17 @@
 /* Mobile first Screens*/
+body{
+  font-family: 'Oswald', sans-serif;
+}
 .container {
   /* Step 1: Set display to grid */
   display: grid;
   /* initially each element has it's own row for small screens */
   grid-template-areas:
-    "nav-left"
-    "nav-links"
-    "nav-right"
+    "nav"
     "main"
     "os"
     "ft";
-  grid-template-rows: 86px 25px 50px 2fr 150px 1fr;
+  grid-template-rows: 192px 2fr 150px 1fr;
   /* comment after finish with layout. */
   height: 95vh;
   min-width: 406px;
@@ -30,6 +31,7 @@
 .main {
   grid-area: main;
   flex-direction: column;
+  /* overflow:scroll; */
 }
 .offset-box {
   grid-area: os;
@@ -41,28 +43,15 @@
 /* * {
     border: 1px solid red !important;
   } */
-
 /* Custom break point Small Screens*/
 @media (min-width: 600px) and (max-width: 660px) {
   .container {
     grid-template-areas:
-      "nav-left nav-left nav-left nav-left nav-left nav-left nav-left nav-left"
-      "nav-links nav-links nav-links nav-links nav-links nav-links nav-links nav-links"
-      "nav-right nav-right nav-right nav-right nav-right nav-right nav-right nav-right"
+      "nav nav nav nav nav nav nav nav"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
-    grid-template-rows: 98px 41px 52px 2fr 1fr;
+    grid-template-rows: 180px 2fr 1fr;
     border: 10px solid limegreen;
-  }
-  .nav-left {
-    grid-area: nav-left;
-    /* position: fixed; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
   }
   .offset-box {
     position: fixed;
@@ -77,7 +66,7 @@
 @media (min-width: 660px) and (max-width: 1100px) {
   .container {
     grid-template-areas:
-      "nav-left nav-left nav-links nav-links nav-links nav-links nav-right nav-right"
+      "nav nav nav nav nav nav nav nav"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
@@ -85,21 +74,8 @@
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
-    border: 10px solid black;
+    border: 5px solid black;
   }
-  /* .offset-box {
-    grid-area: 5 / 9 / 7 / 6;
-    z-index: 1;
-    border: 3px solid green;
-    height: 100%;
-    width: 100%;
-    position: static;
-    /* grid-area: 5 / 8 / 7 / 6;
-    z-index: 1;
-    border: 3px solid green;
-    height: 14%;
-    width: 40%; 
-  } */
   .offset-box {
     position: fixed;
     border: 3px solid green;
@@ -113,7 +89,7 @@
 @media (min-width: 1101px) {
   .container {
     grid-template-areas:
-      "nav-left nav-left nav-links nav-links nav-right nav-right nav-right nav-right"
+      "nav nav nav nav nav nav nav nav"
       "main main main main main main main main"
       "main main main main main main main main"
       "main main main main main main main main"
@@ -132,19 +108,4 @@
     bottom: 65px;
     right: 18px;
   }
-  /* .offset-box {
-    grid-area: 5 / 9 / 7 / 6;
-    z-index: 1;
-    border: 3px solid green;
-    height: 100%;
-    width: 100%;
-    position: static;
-    /* .offset-box {
-    grid-area: 5 / 8 / 7 / 6;
-    z-index: 1;
-    border: 3px solid green;
-    height: 14%;
-    width: 40%;
-    }
-  } */
 }
