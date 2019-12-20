@@ -3,12 +3,25 @@
   grid-template-areas:
     "nav"
     "us"
-    "main"
+    "blog"
     "ft";
   grid-template-rows: 192px 1fr 2fr 1fr;
 }
 .user-info {
   grid-area: us;
+}
+.blog-post {
+  grid-area: blog;
+  display: grid;
+  /* grid-template:
+    "hd"
+    "pg"
+    "bmain"
+    "bmain";
+  grid-template-rows: 85px 73px 1fr; */
+  /* grid-template-columns: 1fr; */
+  justify-items: center;
+  font-size: 15px;
 }
 /* Temporarily see all boxes models*/
 /* * {
@@ -20,7 +33,7 @@
   .container {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
-      "main main main main us us us us"
+      "blog blog blog blog us us us us"
       "ft ft ft ft ft ft ft ft";
     /* grid-template-columns: repeat(auto, 1fr); */
     grid-template-rows: 180px 2fr 1fr;
@@ -32,13 +45,13 @@
   .container {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
-      "main main main main main main us us"
-      "main main main main main main us us"
-      "main main main main main main us us"
-      "main main main main main main us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-    /* grid-auto-columns: minmax(auto, 1fr); */
+    grid-auto-columns: minmax(auto, 1fr);
     /* grid-template-columns: 300px 300px 300px; */
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid black;
@@ -49,10 +62,10 @@
   .container {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
-      "main main main main main main us us"
-      "main main main main main main us us"
-      "main main main main main main us us"
-      "main main main main main main us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
+      "blog blog blog blog blog blog us us"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     /* grid-template-columns: repeat(auto-fill, 1fr); */

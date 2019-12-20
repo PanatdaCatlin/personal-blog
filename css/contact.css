@@ -3,9 +3,22 @@
   /* initially each element has it's own row for small screens */
   grid-template-areas:
     "nav"
-    "main"
+    "contact"
     "ft";
   grid-template-rows: 192px 1fr 2fr 1fr;
+}
+.contact-form {
+  grid-area: contact;
+  display: grid;
+  /* grid-template:
+    "hd"
+    "pg"
+    "bmain"
+    "bmain";
+  grid-template-rows: 85px 73px 1fr; */
+  /* grid-template-columns: 1fr; */
+  justify-items: center;
+  font-size: 15px;
 }
 /* Temporarily see all boxes models*/
 /* * {
@@ -16,10 +29,10 @@
   .container {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
-      "main main main main main main main main"
-      "main main main main main main main main"
-      "main main main main main main main main"
-      "main main main main main main main main"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     /* grid-template-columns: repeat(auto-fill, 1fr); */
@@ -32,10 +45,10 @@
   .container {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
-      "main main main main main main main main"
-      "main main main main main main main main"
-      "main main main main main main main main"
-      "main main main main main main main main"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     /* grid-template-columns: repeat(auto-fill, 1fr); */

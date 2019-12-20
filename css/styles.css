@@ -1,3 +1,6 @@
+@import "navbar.css";
+@import "flex.css";
+@import "footer.css";
 /* Mobile first Screens*/
 body {
   font-family: "Oswald", sans-serif;
@@ -12,9 +15,9 @@ body {
     "main"
     "os"
     "ft";
-  grid-template-rows: 192px 2fr 160px 1fr;
+  /* grid-template-rows: 1; */
   /* comment after finish with layout. */
-  height: 95vh;
+  min-height: 95vh;
   min-width: 406px;
   border: 5px solid palevioletred;
 }
@@ -28,20 +31,6 @@ body {
   justify-content: center;
   border: 2px solid peru;
   /* background: lemonchiffon; */
-}
-.main {
-  grid-area: main;
-  flex-direction: column;
-  grid-template:
-    "heading"
-    "paragraph"
-    "button";
-  grid-template-rows: 98px 41px 52px;
-  /* grid-template-rows: min-content auto min-content; */
-  /* grid-template-rows: repeat(auto-fill, 100px); */
-  /* grid-auto-rows: minmax(100px, 100px); */
-  /* grid-template-rows: repeat(8, 1fr); */
-  overflow: auto;
 }
 .offset-box {
   grid-area: os;
@@ -95,7 +84,7 @@ body {
     border: 3px solid green;
     height: 226px;
     width: 352px;
-    bottom: 109px;
+    bottom: 23%;
     right: 18px;
     z-index: 2;
     background-color: darkseagreen;
@@ -120,8 +109,8 @@ body {
     position: fixed;
     border: 3px solid green;
     height: 226px;
-    width: 352px;
-    bottom: 109px;
+    width: 548px;
+    bottom: 284px;
     right: 7px;
     z-index: 2;
     background-color: darkseagreen;

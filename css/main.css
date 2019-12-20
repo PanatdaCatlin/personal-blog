@@ -4,8 +4,8 @@
   grid-template:
     "hd"
     "pg"
-    "bmain"
-    "bmain";
+    "insidemain"
+    "insidemain";
   grid-template-rows: 85px 73px 1fr;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -21,7 +21,7 @@
   margin-left: 17px;
 }
 #main-btn {
-  grid-area: bmain;
+  grid-area: insidemain;
 }
 .landing-btn {
   border: 1px solid #4caf50;
@@ -43,8 +43,8 @@
     grid-template:
       "hd hd hd hd hd hd hd"
       "pg pg pg pg pg pg pg"
-      "bmain bmain bmain bmain bmain bmain bmain"
-      "bmain bmain bmain bmain bmain bmain bmain";
+      "insidemain insidemain insidemain insidemain insidemain bminsidemainain insidemain"
+      "insidemain insidemain insidemain insidemain insidemain bminsidemainain insidemain";
     grid-template-rows: 1fr 0fr 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
