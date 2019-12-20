@@ -5,19 +5,52 @@
     "nav"
     "contact"
     "ft";
-  grid-template-rows: 192px 1fr 2fr 1fr;
+  grid-template-rows: 192px 1fr;
 }
 .contact-form {
   grid-area: contact;
-  display: grid;
-  /* grid-template:
-    "hd"
-    "pg"
-    "bmain"
-    "bmain";
-  grid-template-rows: 85px 73px 1fr; */
-  /* grid-template-columns: 1fr; */
-  justify-items: center;
+}
+input#subject {
+  min-height: 33px;
+  min-width: 340px;
+  padding: 5px;
+  margin-bottom: 24px;
+  border: 1px solid;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+}
+textarea#message {
+  min-height: 300px;
+  min-width: 340px;
+  padding: 5px;
+  margin-bottom: 24px;
+  border: 1px solid;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+}
+#contact-message {
+  justify-content: center;
+  /* justify-items: end; */
+  text-align: center;
+}
+#contact-btn {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  justify-content: flex-end;
+}
+#contact-submit-btn {
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  color: darkseagreen;
+  background-color: white;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  display: inline-block;
+  min-width: 75px;
   font-size: 15px;
 }
 /* Temporarily see all boxes models*/
@@ -39,6 +72,32 @@
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid black;
   }
+  input#subject {
+    min-height: 33px;
+    min-width: 450px;
+    padding: 5px;
+    /* margin: 5px; */
+    margin-bottom: 24px;
+  }
+textarea#message {
+    min-height: 300px;
+    min-width: 450px;
+    padding: 5px;
+    margin-bottom: 24px;
+  }
+  #contact-submit-btn {
+    border: 1px solid #4caf50;
+    border-radius: 12px;
+    color: #4caf50;
+    width: 175px;
+    padding: 9px 32px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 }
 /* Large Screens */
 @media (min-width: 1101px) {
@@ -54,5 +113,31 @@
     /* grid-template-columns: repeat(auto-fill, 1fr); */
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid steelblue;
+  }
+  input#subject {
+    min-height: 33px;
+    min-width: 450px;
+    padding: 5px;
+    /* margin: 5px; */
+    margin-bottom: 24px;
+  }
+textarea#message {
+    min-height: 300px;
+    min-width: 450px;
+    padding: 5px;
+    margin-bottom: 24px;
+  }
+  #contact-submit-btn {
+    border: 1px solid #4caf50;
+    border-radius: 12px;
+    color: #4caf50;
+    width: 175px;
+    padding: 9px 32px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
 }
