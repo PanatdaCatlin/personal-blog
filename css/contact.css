@@ -7,13 +7,14 @@
     "ft";
   grid-template-rows: 192px 1fr;
 }
-.contact-form {
+#contact-us {
   grid-area: contact;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 p#contact-message {
-    text-align: center;
-    /* padding: 16px; */
-    margin: 12px;
+  text-align: center;
+  margin: 12px;
 }
 input#subject {
   min-height: 33px;
@@ -33,15 +34,9 @@ textarea#message {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
-/* #contact-message {
-  justify-content: center;
-  justify-items: end;
-  text-align: center;
-} */
 #contact-btn {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   justify-content: flex-end;
 }
 #contact-submit-btn {
@@ -73,7 +68,6 @@ textarea#message {
       "contact contact contact contact contact contact contact contact"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-    /* grid-template-columns: repeat(auto-fill, 1fr); */
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid black;
   }
@@ -84,7 +78,7 @@ textarea#message {
     /* margin: 5px; */
     margin-bottom: 24px;
   }
-textarea#message {
+  textarea#message {
     min-height: 300px;
     min-width: 450px;
     padding: 5px;
@@ -115,7 +109,6 @@ textarea#message {
       "contact contact contact contact contact contact contact contact"
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-    /* grid-template-columns: repeat(auto-fill, 1fr); */
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
     border: 5px solid steelblue;
   }
@@ -123,10 +116,9 @@ textarea#message {
     min-height: 33px;
     min-width: 450px;
     padding: 5px;
-    /* margin: 5px; */
     margin-bottom: 24px;
   }
-textarea#message {
+  textarea#message {
     min-height: 300px;
     min-width: 450px;
     padding: 5px;

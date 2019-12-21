@@ -13,8 +13,8 @@
   <body>
     <!-- CONTAINER -->
     <div class="container">
-      <nav class="navbar">
-        <div class="nav-left">
+      <nav id="navbar">
+        <div id="nav-left">
           <img id="logo-image" src="img/logo.png" alt="logo" />
           <div id="logo-text">Personal Blog</div>
         </div>
@@ -23,14 +23,14 @@
           <a href="blog.html" class="nav-middle">Blog</a>
           <a href="contact.html" class="nav-middle">Contact Us</a>
         </div>
-        <form action="#" class="nav-right">
+        <form id="nav-right">
           <input id="search-input" type="search" placeholder="search..." />
           <button id="search-btn" type="submit">
             <img id="search-icon" src="img/search-icon.png" alt="search icon" />
           </button>
         </form>
       </nav>
-      <section class="home-page box column">
+      <section id="home-page" class="box">
         <div id="hp-heading">
           <h1>Welcome to Personal Blog!</h1>
           <h3>
@@ -38,7 +38,7 @@
           </h3>
         </div>
         <div id="hp-paragraph">
-          <p class="blurb">
+          <p>
             Everybody walks past a thousand story ideas every day. The good
             writers are the ones who see five or six of them. Most people don’t
             see any.
@@ -46,39 +46,52 @@
           <p>Let's get started writing today!</p>
         </div>
         <div id="hp-btn">
-          <button class="landing-btn"><a class="landing-links" href="#">Sign Up</a></button>
-          <button class="landing-btn"><a class="landing-links" href="blog.html">Login in</a></button>
+          <button class="landing-btn">
+            <a class="landing-links" href="#">Sign Up</a>
+          </button>
+          <button class="landing-btn">
+            <a class="landing-links" href="blog.html">Login in</a>
+          </button>
         </div>
       </section>
-      <div class="offset-box box">Off Set Box</div>
-      <footer class="row wide footer">
-        <div class="left-footer row wrap flex-space-evenly">
-          <p class="blurb">
+      <div class="offset-box box column wide flex-center">
+        Like and Share!
+        <div class="row">
+          Make sure to like and share us on Facecook!
+        </div>
+        <div class="row wide flex-center">
+          <img
+            id="like-share"
+            src="img/like-share.png"
+            alt="like and share icon"
+          />
+          <button id="like-share-btn">
+            <a class="landing-links" href="#">Click Here</a>
+          </button>
+        </div>
+      </div>
+      <footer id="footer" class="row wide">
+        <div id="left-footer" class="row wrap flex-space-evenly">
+          <p id="blurb">
             Welcome to a place where words matter. On © Personal blog, smart
             voices and original ideas take center stage! Join our millions of
             bloggers!
           </p>
-          <div class="column bullets flex-grow">
-            <span>
-              Terms of Use
-            </span>
-            <span>
-              Privacy Policy
-            </span>
-            <span>
-              Personal Blog © 2019
-            </span>
+          <div id="bullets" class="column flex-grow">
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>Personal Blog © 2019</span>
           </div>
         </div>
-        <div class="right-footer tall flex-grow">
+        <div id="right-footer" class="tall flex-grow">
           <div class="little-square">
-            <a href="#"><img src="img/facebook.png" alt="facebook icon"/></a>
+            <a href="#"> <img src="img/facebook.png" alt="facebook icon"/></a>
           </div>
           <div class="little-square">
-            <a href="#"><img src="img/instagram.png" alt="instagram icon"/></a>
+            <a href="#"> <img src="img/instagram.png" alt="instagram icon"/></a>
           </div>
           <div class="little-square">
-            <a href="#"><img src="img/twitter.png" alt="twitter icon"/></a>
+            <a href="#"> <img src="img/twitter.png" alt="twitter icon"/></a>
           </div>
         </div>
       </footer>

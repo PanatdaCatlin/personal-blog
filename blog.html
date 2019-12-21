@@ -13,60 +13,60 @@
   <body>
     <!-- CONTAINER -->
     <div class="container">
-      <div class="navbar">
-        <div class="nav-left">
+      <nav id="navbar">
+        <div id="nav-left">
           <img id="logo-image" src="img/logo.png" alt="logo" />
           <div id="logo-text">Personal Blog</div>
         </div>
-        <div class="nav-middle nav-middle">
+        <div class="nav-middle">
           <a href="index.html" class="nav-middle">Home</a>
           <a href="blog.html" class="nav-middle">Blog</a>
           <a href="contact.html" class="nav-middle">Contact Us</a>
         </div>
-        <form action="#" class="nav-right">
+        <form id="nav-right">
           <input id="search-input" type="search" placeholder="search..." />
           <button id="search-btn" type="submit">
             <img id="search-icon" src="img/search-icon.png" alt="search icon" />
           </button>
         </form>
-      </div>
+      </nav>
       <div class="blog-post box column">
         <h1 class="row wide">FLEXBOX AND GRIDS, YOUR LAYOUT’S BEST FRIENDS.</h1>
-        <div class="blog-container wide">
+        <div class="wide">
           <img id="blog-image" src="img/flex-grid.png" alt="flex & grid" />
           <span>
             In the past, CSS float properties were one of the main methods for
             arranging elements on a website. And if you’ve ever worked that way,
             you know that it’s not always ideal for complex layouts. Luckily in
             the modern era of web design, aligning elements has become much more
-            streamlined thanks to Flexbox and CSS grids.
+            streamlined thanks to Flexbox and CSS grids.</span>
             <br />
-            When Flexbox came along, it made alignment much easier and has since
+            <span>Flexbox came along, it made alignment much easier and has since
             been widely adopted. CSS Grid Layouts have also created a lot of
             excitement in the web design community. Awhile back, we took a look
             at how to create a basic CSS Grid Layout. Although it is not widely
             adopted, browsers are starting to adopt support for it. When it is
             fully supported, this will have a great impact on designs. Browser
             support is increasing all the time; be sure to check out Can I Use
-            for the most up to date information.
+            for the most up to date information.</span>
             <br />
-            Now you may be wondering what’s next; after all, Flexbox and CSS
+            <span>you may be wondering what’s next; after all, Flexbox and CSS
             Grid Layouts seem to accomplish similar results. It’s not a Flexbox
             versus Grid debate, however, but more of learning how to use them
             together. The more I’ve played around with both Grid and Flexbox,
             I’ve found that you don’t have to choose just one or the other. In
             the near future, when CSS Grid Layouts have full browser support,
             designers will be able to take the combined advantages of each and
-            create the most efficient and interesting designs.
+            create the most efficient and interesting designs.</span>
             <br />
-            CSS grid works best for more complicated layouts. Think of CSS grid
+            <span>CSS grid works best for more complicated layouts. Think of CSS grid
             as a way to anchor multiple elements onto a page. Grid is practical
             for layouts that have multiple blocks of content and images that you
             need to organize. Flexbox isn’t as useful for these more involved
             layouts, because it only lets you control how the elements are
-            arranged in a single direction.
+            arranged in a single direction.</span>
             <br />
-            Of course CSS grid and flexbox can work together in a layout. You
+            <span>Of course CSS grid and flexbox can work together in a layout. You
             can use flexbox inside CSS grid and vice versa. For instance, you
             could use flexbox to center an element like a button both vertically
             and horizontally within a particular grid cell (since centering with
@@ -75,10 +75,9 @@
             whose layout is determined, at a higher level, by flexbox. This can
             be really handy for combining the flexibility of flexbox with the
             precision of grid for cards that contain a wealth of data, such as
-            you might need for real estate listings.
+            you might need for real estate listings.</span>
             <br />
-            You can learn much more about using flexbox and grid together!
-          </span>
+            <span>You can learn much more about using flexbox and grid together!</span>
         </div>
         <br /><br />
         <div class="row wide flex-space-between">
@@ -87,7 +86,7 @@
           <a href="#">Next Post</a>
         </div>
       </div>
-      <div class="user-info column flex-start bordered">
+      <div id="user-info" class="column flex-start bordered">
         <div class="card wide tall">
           <img id="avatar" src="img/img_avatar2.png" alt="Avatar" />
           <div class="card-info wide column">
@@ -120,34 +119,28 @@
           </div>
         </div>
       </div>
-      <footer class="row wide footer">
-        <div class="left-footer row wrap flex-space-evenly">
-          <p class="blurb">
+      <footer id="footer" class="row wide">
+        <div id="left-footer" class="row wrap flex-space-evenly">
+          <p id="blurb">
             Welcome to a place where words matter. On © Personal blog, smart
             voices and original ideas take center stage! Join our millions of
             bloggers!
           </p>
-          <div class="column bullets flex-grow">
-            <span>
-              Terms of Use
-            </span>
-            <span>
-              Privacy Policy
-            </span>
-            <span>
-              Personal Blog © 2019
-            </span>
+          <div id="bullets" class="column flex-grow">
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>Personal Blog © 2019</span>
           </div>
         </div>
-        <div class="right-footer tall flex-grow">
+        <div id="right-footer" class="tall flex-grow">
           <div class="little-square">
-            <a href="#"><img src="img/facebook.png" alt="facebook icon"/></a>
+            <a href="#"> <img src="img/facebook.png" alt="facebook icon"/></a>
           </div>
           <div class="little-square">
-            <a href="#"><img src="img/instagram.png" alt="instagram icon"/></a>
+            <a href="#"> <img src="img/instagram.png" alt="instagram icon"/></a>
           </div>
           <div class="little-square">
-            <a href="#"><img src="img/twitter.png" alt="twitter icon"/></a>
+            <a href="#"> <img src="img/twitter.png" alt="twitter icon"/></a>
           </div>
         </div>
       </footer>

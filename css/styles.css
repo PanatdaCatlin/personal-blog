@@ -1,13 +1,14 @@
 @import "navbar.css";
 @import "flex.css";
 @import "footer.css";
-
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap);
 /* Mobile first Screens*/
 body {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
   font-weight: 300;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 a {
   text-decoration: none;
@@ -22,12 +23,9 @@ a {
     "hp"
     "os"
     "ft";
-    grid-template-rows: 192px 2fr 1fr;
-  /* grid-template-rows: 1; */
-  /* comment after finish with layout. */
+  grid-template-rows: 192px 2fr 1fr;
   min-height: 95vh;
   min-width: 406px;
-  border: 5px solid palevioletred;
 }
 .bordered {
   border: 2px solid peru;
@@ -37,15 +35,29 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid peru;
-  /* background: lemonchiffon; */
 }
 .offset-box {
   grid-area: os;
   background-color: darkseagreen;
+  opacity: 0.5;
 }
-.footer {
+#like-share {
+  width: 100px;
+}
+#like-share-btn {
+  border: 1px solid green;
+  background-color: white;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 19px;
+  display: inline-block;
+  height: 52px;
+  width: 163px;
+  font-size: 15px;
+}
+#footer {
   grid-area: ft;
+  border-top: 1px solid black;
 }
 /* Temporarily see all boxes models*/
 /* * {
@@ -60,18 +72,7 @@ a {
       "os os os os os os os os"
       "ft ft ft ft ft ft ft ft";
     grid-template-rows: 180px 2fr 178px 1fr;
-    border: 10px solid limegreen;
   }
-  /* .offset-box {
-    position: fixed;
-    border: 3px solid green;
-    height: 179px;
-    width: 285px;
-    bottom: 65px;
-    right: 16px;
-    z-index: 2;
-    background-color: darkseagreen;
-  } */
 }
 /* Medium Screens*/
 @media (min-width: 660px) and (max-width: 1100px) {
@@ -85,17 +86,31 @@ a {
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
-    border: 5px solid black;
   }
   .offset-box {
     position: fixed;
     border: 3px solid green;
     height: 226px;
     width: 352px;
+    text-align: center;
     bottom: 23%;
     right: 18px;
     z-index: 2;
     background-color: darkseagreen;
+  }
+  #like-share {
+    width: 75px;
+  }
+  #like-share-btn {
+    border: 1px solid green;
+    background-color: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 13px;
+    display: inline-block;
+    height: 43px;
+    width: 112px;
+    font-size: 15px;
   }
 }
 /* Large Screens */
@@ -111,7 +126,6 @@ a {
       "ft ft ft ft ft ft ft ft";
     /* grid-template-columns: 300px 300px 300px; */
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
-    border: 5px solid steelblue;
   }
   .offset-box {
     position: fixed;
@@ -119,8 +133,11 @@ a {
     height: 226px;
     width: 548px;
     bottom: 284px;
-    right: 7px;
+    right: 13px;
     z-index: 2;
     background-color: darkseagreen;
+  }
+  #like-share {
+    width: 100px;
   }
 }
