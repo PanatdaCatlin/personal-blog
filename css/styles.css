@@ -21,7 +21,7 @@ a {
     "hp"
     "os"
     "ft";
-  grid-template-rows: 192px 2fr 1fr;
+  grid-template-rows: 192px;
   min-height: 95vh;
 }
 .bordered {
@@ -88,10 +88,10 @@ a {
   .offset-box {
     position: fixed;
     border: 3px solid green;
-    height: 226px;
+    height: 172px;
     width: 352px;
     text-align: center;
-    bottom: 23%;
+    bottom: 21%;
     right: 18px;
     z-index: 2;
     background-color: darkseagreen;
@@ -128,9 +128,10 @@ a {
   .offset-box {
     position: fixed;
     border: 3px solid green;
-    height: 226px;
-    width: 548px;
-    bottom: 284px;
+    height: 172px;
+    width: 352px;
+    bottom: 284px;    
+    bottom: 21%;
     right: 13px;
     z-index: 2;
     background-color: darkseagreen;

@@ -1,27 +1,15 @@
 #home-page {
   grid-area: hp;
-  display: grid;
-  grid-template:
-    "hd"
-    "pg"
-    "hp-content"
-    "hp-content";
-  grid-template-columns: 1fr;
-  justify-items: center;
-  font-size: 15px;
+  font-size: 1.2em;
   border: 1px solid black;
 }
-#home-heading {
-  grid-area: hd;
-  line-height: 4px;
-}
 #home-paragraph {
-  grid-area: pg;
   padding: 10px;
   margin-left: 17px;
+  text-align: center;
 }
-#home-btn {
-  grid-area: hp-content;
+#home-btn-container {
+  flex-direction: column;
 }
 .landing-btn {
   border: 1px solid #4caf50;
@@ -43,22 +31,12 @@
 /* Custom break point Small Screens*/
 @media (min-width: 600px) and (max-width: 660px) {
   #home-page {
-    grid-area: hp;
-    display: grid;
-    grid-template:
-      "hd hd hd hd hd hd hd"
-      "pg pg pg pg pg pg pg"
-      "hp-content hp-content hp-content hp-content hp-content hp-content hp-content"
-      "hp-content hp-content hp-content hp-content hp-content hp-content hp-content";
-    justify-items: center;
     font-size: 1.2em;
   }
   #home-heading {
-    grid-column: 1/7;
-    line-height: 13px;
+    line-height: 2px;
   }
   #home-paragraph {
-    grid-column: 1/7;
     max-width: 550px;
   }
   .landing-btn {
@@ -77,30 +55,16 @@
 /* Medium & Large Screens*/
 @media (min-width: 660px) {
   #home-page {
-    grid-area: hp;
-    display: grid;
-    grid-template:
-      "hd hd hd hd hd hd hd"
-      "pg pg pg pg pg pg pg"
-      "hp-content hp-content hp-content hp-content hp-content hp-content hp-content"
-      "hp-content hp-content hp-content hp-content hp-content hp-content hp-content";
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    font-size: 1.2em;
+    padding-top: 25px;
   }
   #home-heading {
-    grid-column: 1/7;
-    line-height: 13px;
+    line-height: 2px;
   }
   #home-paragraph {
     max-width: 550px;
     text-align: center;
     flex-direction: column;
-    height: 100%;
-  }
-  #home-btn {
-    grid-column: 1/7;
-    grid-row: 2/7;
+    padding-bottom: 20px;
   }
   .landing-btn {
     border: 1px solid #4caf50;
@@ -108,8 +72,6 @@
     width: 175px;
     padding: 20px 32px;
     text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
