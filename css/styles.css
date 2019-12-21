@@ -23,7 +23,6 @@ a {
     "ft";
   grid-template-rows: 192px 2fr 1fr;
   min-height: 95vh;
-  /* min-width: 406px; */
 }
 .bordered {
   border: 2px solid peru;
