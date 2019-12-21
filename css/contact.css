@@ -9,8 +9,7 @@
 }
 #contact-us {
   grid-area: contact;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 p#contact-message {
   text-align: center;
@@ -69,7 +68,6 @@ textarea#message {
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     grid-template-rows: 106px 2fr 2fr 1fr 30px 170px 30px;
-    border: 5px solid black;
   }
   input#subject {
     min-height: 33px;
@@ -110,7 +108,6 @@ textarea#message {
       "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
     grid-template-rows: 100px 2fr 2fr 1fr 30px 170px 30px;
-    border: 5px solid steelblue;
   }
   input#subject {
     min-height: 33px;
