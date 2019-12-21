@@ -57,7 +57,7 @@ a {
   grid-area: ft;
   border-top: 1px solid black;
 }
-/* Temporarily see all boxes models*/
+/* Temporarily see all boxes models */
 /* * {
     border: 1px solid red !important;
   } */
@@ -72,7 +72,7 @@ a {
     grid-template-rows: 180px 2fr 178px 1fr;
   }
 }
-/* Medium Screens*/
+/* Medium Screens */
 @media (min-width: 660px) and (max-width: 1100px) {
   .container {
     grid-template-areas:
