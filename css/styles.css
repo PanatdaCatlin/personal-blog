@@ -23,7 +23,7 @@ a {
     "ft";
   grid-template-rows: 192px 2fr 1fr;
   min-height: 95vh;
-  min-width: 406px;
+  /* min-width: 406px; */
 }
 .bordered {
   border: 2px solid peru;
@@ -41,6 +41,7 @@ a {
 }
 #like-share {
   width: 100px;
+  height: auto;
 }
 #like-share-btn {
   border: 1px solid green;
