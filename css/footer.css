@@ -60,5 +60,7 @@ footer {
   }
   .bullets {
     align-self: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
