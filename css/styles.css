@@ -24,9 +24,6 @@ a {
   grid-template-rows: 192px;
   min-height: 95vh;
 }
-.bordered {
-  border: 2px solid peru;
-}
 .box {
   /* Step 1: Set display to grid */
   display: flex;
@@ -37,6 +34,7 @@ a {
   grid-area: os;
   background-color: darkseagreen;
   opacity: 0.5;
+  z-index: -1;
 }
 #like-share {
   width: 100px;

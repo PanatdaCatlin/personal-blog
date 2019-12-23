@@ -9,7 +9,6 @@
 }
 #contact-us {
   grid-area: contact;
-  border: 1px solid black;
 }
 p#contact-message {
   text-align: center;

@@ -1,7 +1,6 @@
 #home-page {
   grid-area: hp;
   font-size: 1.2em;
-  border: 1px solid black;
 }
 #home-paragraph {
   padding: 10px;
