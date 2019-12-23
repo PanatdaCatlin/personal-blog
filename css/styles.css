@@ -55,10 +55,6 @@ a {
   grid-area: ft;
   border-top: 1px solid black;
 }
-/* Temporarily see all boxes models */
-/* * {
-    border: 1px solid red !important;
-  } */
 /* Custom break point Small Screens*/
 @media (min-width: 600px) and (max-width: 660px) {
   .container {

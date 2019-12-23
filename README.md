@@ -5,7 +5,7 @@
 
 ## Description
 
-A static blog webpage. This project will demonstrate how Flexbox works together with CSS grid. Only using purely HTML, CSS, CSS Grid, Flexbox. Design process including HTML Responsive Web Design, Moblie First Design, prototyping and mockups.
+A static blog webpage. This project will demonstrate how Flexbox works together with CSS grid. Using purely HTML, CSS, CSS Grid, and Flexbox. Design process includes HTML Responsive Web Design, Moblie First Design, prototyping and mockups.
 
 ## Mock-Up Samples
 
@@ -47,17 +47,16 @@ None.
 
 ## Live demo
 
-* To visit the project's  [Click Here](https://panatdacatlin.github.io/personal-blog/). This should be redirect to `https://panatdacatlin.github.io/personal-blog/`
+* To visit the project [Click Here](https://panatdacatlin.github.io/personal-blog/). This should redirect to `https://panatdacatlin.github.io/personal-blog/`
 
 ## Download Repo
 
-* Clone this repository: In the command line just enter:`$ git clone https://github.com/PanatdaCatlin/personal-blog`.
+* Clone this repository: in the command line enter:`$ git clone https://github.com/PanatdaCatlin/personal-blog`.
 
 
 ## Usage
 
-To open locally
-Once Clone:
+To open locally once prject is cloned:
 1. Navigate to the application directory: `$ cd personal-blog`
 2. Execute the command `$ open index.html` or `$ <your browser> index.html`
 3. The application will be opened in your browser
