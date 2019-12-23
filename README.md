@@ -51,12 +51,12 @@ None.
 
 ## Download Repo
 
-* Clone this repository: in the command line enter:`$ git clone https://github.com/PanatdaCatlin/personal-blog`.
+* Clone this repository: in the command-line enter:`$ git clone https://github.com/PanatdaCatlin/personal-blog`.
 
 
 ## Usage
 
-To open locally once prject is cloned:
+To open locally once project is cloned:
 1. Navigate to the application directory: `$ cd personal-blog`
 2. Execute the command `$ open index.html` or `$ <your browser> index.html`
 3. The application will be opened in your browser
